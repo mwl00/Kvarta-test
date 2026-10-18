@@ -9,24 +9,25 @@ const config: Config = {
     extend: {
       colors: {
         noir: {
-          DEFAULT: "#0a0908",
-          900: "#12100e",
-          800: "#1c1815",
-          700: "#2a241f",
+          DEFAULT: "rgb(var(--noir) / <alpha-value>)",
+          900: "rgb(var(--noir-900) / <alpha-value>)",
+          800: "rgb(var(--noir-800) / <alpha-value>)",
+          700: "rgb(var(--noir-700) / <alpha-value>)",
         },
         roast: {
-          900: "#2a1810",
-          800: "#3a2418",
-          600: "#7a4a32",
-          400: "#b87d5c",
-          300: "#d4a88a",
+          900: "rgb(var(--roast-900) / <alpha-value>)",
+          800: "rgb(var(--roast-800) / <alpha-value>)",
+          600: "rgb(var(--roast-600) / <alpha-value>)",
+          400: "rgb(var(--roast-400) / <alpha-value>)",
+          300: "rgb(var(--roast-300) / <alpha-value>)",
         },
         pink: {
-          DEFAULT: "#e83a7a",
-          bright: "#f55a8f",
-          soft: "#f28ab0",
+          DEFAULT: "rgb(var(--pink) / <alpha-value>)",
+          bright: "rgb(var(--pink-bright) / <alpha-value>)",
+          contrast: "rgb(var(--pink-contrast) / <alpha-value>)",
+          soft: "rgb(var(--pink-soft) / <alpha-value>)",
         },
-        foam: "#f3eee8",
+        foam: "rgb(var(--foam) / <alpha-value>)",
       },
       fontFamily: {
         display: ["var(--font-display)", "sans-serif"],

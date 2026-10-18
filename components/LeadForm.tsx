@@ -111,13 +111,13 @@ export function LeadForm() {
   }
 
   const fieldClass =
-    "mt-2 w-full border-0 border-b border-white/20 bg-transparent py-3 text-foam outline-none placeholder:text-foam/30 focus:border-pink";
+    "mt-2 w-full border-0 border-b border-foam/20 bg-transparent py-3 text-foam outline-none placeholder:text-foam/30 focus:border-pink-contrast";
 
   return (
     <section id="lead" className="bg-noir py-16 sm:py-24">
       <div className="section-pad mx-auto grid max-w-content gap-10 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-5">
-          <h2 className="section-title text-pink">Заявка</h2>
+          <h2 className="section-title text-pink-contrast">Заявка</h2>
           <p className="section-lede mt-3 text-foam">
             Оставьте заявку&nbsp;— мы&nbsp;сделаем ваши дни краше.
           </p>
@@ -127,7 +127,7 @@ export function LeadForm() {
           <div className="mt-6 space-y-1 text-sm text-foam/45">
             <p>
               Тел:{" "}
-              <a href="tel:+375291234567" className="text-pink">
+              <a href="tel:+375291234567" className="text-pink-contrast">
                 +375 (29) 123-45-67
               </a>
             </p>
@@ -137,7 +137,7 @@ export function LeadForm() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="text-pink"
+                className="text-pink-contrast"
               >
                 @kvarta.coffee
               </a>
@@ -149,7 +149,7 @@ export function LeadForm() {
         <div className="lg:col-span-6 lg:col-start-7">
           {state === "success" ? (
             <div className="border border-pink/50 p-8" role="status">
-              <p className="font-display text-2xl font-bold text-pink">Готово</p>
+              <p className="font-display text-2xl font-bold text-pink-contrast">Готово</p>
               <p className="mt-3 text-sm text-foam/70">{successMessage}</p>
               <button
                 type="button"
@@ -235,8 +235,8 @@ export function LeadForm() {
                         onClick={() => setInterest(opt.value)}
                         className={`h-10 px-4 text-sm ${
                           active
-                            ? "bg-pink text-noir"
-                            : "border border-white/15 text-foam/70"
+                            ? "bg-pink text-ink"
+                            : "border border-foam/15 text-foam/70"
                         }`}
                         aria-pressed={active}
                       >

@@ -26,12 +26,12 @@ export function Hero() {
         </div>
 
         <div className="section-pad relative mx-auto flex min-h-[100svh] max-w-content flex-col justify-end pb-10 pt-28 sm:pb-14">
-          <p className="mb-4 text-sm text-pink">Минск · с 2019 · без склада</p>
+          <p className="mb-4 text-sm text-pink-contrast">Минск · с 2019 · без склада</p>
 
           <h1 className="font-display text-hero max-w-[16ch] text-foam">
             Это вам не&nbsp;турецкий базар.
             <span className="mt-1 block">
-              Это&nbsp;— <span className="text-pink">Кварта.</span>
+              Это&nbsp;— <span className="text-pink-contrast">Кварта.</span>
             </span>
           </h1>
 
@@ -51,7 +51,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="overflow-hidden border-y border-pink/30 bg-pink py-3 text-noir">
+      <div className="overflow-hidden border-y border-pink/30 bg-pink py-3 text-ink">
         <div className="flex w-max animate-marquee gap-10 whitespace-nowrap font-display text-xs font-bold tracking-wider sm:text-sm">
           {[...ticker, ...ticker].map((item, i) => (
             <span key={`${item}-${i}`} className="flex items-center gap-10">

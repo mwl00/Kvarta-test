@@ -74,7 +74,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#050505",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
 };
@@ -87,8 +87,17 @@ export default function RootLayout({
   return (
     <html
       lang="ru"
+      suppressHydrationWarning
       className={`${display.variable} ${lede.variable} ${sans.variable}`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'try { if (localStorage.getItem("kvarta-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch {}',
+          }}
+        />
+      </head>
       <body className="bg-noir font-sans text-foam antialiased">{children}</body>
     </html>
   );

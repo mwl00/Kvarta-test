@@ -3,12 +3,12 @@ export function Delivery() {
     <section id="delivery" className="bg-roast-800 py-16 sm:py-24">
       <div className="section-pad mx-auto max-w-content">
         <div className="mb-10 max-w-2xl">
-          <h2 className="section-title text-pink">
+          <h2 className="section-title text-pink-contrast">
             Доставка и&nbsp;самовывоз
           </h2>
         </div>
 
-        <div className="grid gap-8 border-t border-white/10 pt-10 md:grid-cols-2 md:gap-16">
+        <div className="grid gap-8 border-t border-foam/10 pt-10 md:grid-cols-2 md:gap-16">
           <article>
             <h3 className="font-display text-2xl font-bold text-foam">
               Самовывоз

@@ -6,7 +6,7 @@ export function Catalog() {
     <section id="catalog" className="bg-noir py-16 sm:py-24">
       <div className="section-pad mx-auto max-w-content">
         <div className="mb-10 max-w-xl sm:mb-14">
-          <h2 className="section-title text-pink">Каталог</h2>
+          <h2 className="section-title text-pink-contrast">Каталог</h2>
           <p className="section-lede mt-3 text-foam">Что жарим сейчас</p>
         </div>
 
@@ -22,7 +22,7 @@ export function Catalog() {
                   className="object-cover"
                 />
                 {product.tag && (
-                  <span className="absolute left-3 top-3 bg-pink px-2 py-1 text-xs font-bold text-noir">
+                  <span className="absolute left-3 top-3 bg-pink px-2 py-1 text-xs font-bold text-ink">
                     {product.tag}
                   </span>
                 )}
@@ -32,7 +32,7 @@ export function Catalog() {
                 <h3 className="font-display text-xl font-bold text-foam sm:text-2xl">
                   {product.name}
                 </h3>
-                <p className="shrink-0 font-display text-xl font-bold text-pink">
+                <p className="shrink-0 font-display text-xl font-bold text-pink-contrast">
                   {product.price}{" "}
                   <span className="text-sm font-medium text-foam/45">BYN</span>
                 </p>
@@ -45,7 +45,7 @@ export function Catalog() {
                 {product.notes.join(" · ")}
               </p>
 
-              <a href="#lead" className="mt-4 inline-block text-sm text-pink">
+              <a href="#lead" className="mt-4 inline-block text-sm text-pink-contrast">
                 Заказать →
               </a>
             </li>

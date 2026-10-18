@@ -6,7 +6,7 @@ export function Story() {
       <div className="section-pad mx-auto max-w-content">
         <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-5">
-            <h2 className="section-title text-pink">Кто мы?</h2>
+            <h2 className="section-title text-pink-contrast">Кто мы?</h2>
             <p className="section-lede mt-3 text-foam">
               Аня и&nbsp;Дмитрий.
               <span className="mt-1 block text-foam/80">
@@ -43,7 +43,7 @@ export function Story() {
           превращался в&nbsp;склад.
         </p>
 
-        <dl className="mt-10 grid gap-8 border-t border-white/10 pt-10 sm:grid-cols-3">
+        <dl className="mt-10 grid gap-8 border-t border-foam/10 pt-10 sm:grid-cols-3">
           {[
             { label: "Партия", value: "5 кг" },
             { label: "Обжарка", value: "Четверг" },
